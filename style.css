@@ -1,7 +1,6 @@
-* {
+ * {
     box-sizing: border-box;
 }
-
 body {
     height: 100vh;
     background: radial-gradient(circle at top left, #3d1b7a, #140533);
@@ -9,33 +8,19 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    perspective: 1000px;
 }
 
 .scene {
     position: relative;
     width: 600px;
     height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
 
 .stairs {
     position: absolute;
     top: -140px;
     left: 90px;
-    animation: moveStairs 1.2s linear infinite;
-}
-
-@keyframes moveStairs {
-    0% {
-        transform: translateY(0px);
-    }
-
-    100% {
-        transform: translateY(140px);
-    }
 }
 
 .step {
@@ -60,138 +45,38 @@ body {
     background: linear-gradient(to bottom, #0369a1, #1d4ed8);
 }
 
-/* ЕДИНАЯ СИСТЕМА (исправлено) */
-.l01 {
-    transform: translate(0px, 0px);
-    z-index: 30;
-}
+.l01 { transform: translate(0px, 0px); z-index: 30; }
+.l02 { transform: translate(-17px, 17px); z-index: 29; }
+.l03 { transform: translate(-34px, 34px); z-index: 28; }
+.l04 { transform: translate(-51px, 51px); z-index: 27; }
+.l05 { transform: translate(-68px, 68px); z-index: 26; }
+.l1 { transform: translate(-85px, 85px); z-index: 25; }
+.l2 { transform: translate(-120px, 120px); z-index: 24; }
+.l3 { transform: translate(-155px, 155px); z-index: 23; }
+.l4 { transform: translate(-190px, 190px); z-index: 22; }
+.l5 { transform: translate(-225px, 225px); z-index: 21; }
+.l6 { transform: translate(-260px, 260px); z-index: 20; }
+.l7 { transform: translate(-295px, 295px); z-index: 19; }
+.l8 { transform: translate(-330px, 330px); z-index: 18; }
+.l9 { transform: translate(-365px, 365px); z-index: 17; }
+.l10 { transform: translate(-400px, 400px); z-index: 16; }
+.l11 { transform: translate(-435px, 435px); z-index: 15; }
+.l12 { transform: translate(-470px, 470px); z-index: 14; }
+.l13 { transform: translate(-505px, 505px); z-index: 13; }
+.l14 { transform: translate(-540px, 540px); z-index: 12; }
+.l15 { transform: translate(-575px, 575px); z-index: 11; }
+.l16 { transform: translate(-610px, 610px); z-index: 10; }
+.l17 { transform: translate(-645px, 645px); z-index: 9; }
+.l18 { transform: translate(-680px, 680px); z-index: 8; }
+.l19 { transform: translate(-715px, 715px); z-index: 7; }
+.l20 { transform: translate(-750px, 750px); z-index: 6; }
 
-.l02 {
-    transform: translate(-17px, 17px);
-    z-index: 29;
-}
-
-.l03 {
-    transform: translate(-34px, 34px);
-    z-index: 28;
-}
-
-.l04 {
-    transform: translate(-51px, 51px);
-    z-index: 27;
-}
-
-.l05 {
-    transform: translate(-68px, 68px);
-    z-index: 26;
-}
-
-.l1 {
-    transform: translate(-85px, 85px);
-    z-index: 25;
-}
-
-.l2 {
-    transform: translate(-120px, 120px);
-    z-index: 24;
-}
-
-.l3 {
-    transform: translate(-155px, 155px);
-    z-index: 23;
-}
-
-.l4 {
-    transform: translate(-190px, 190px);
-    z-index: 22;
-}
-
-.l5 {
-    transform: translate(-225px, 225px);
-    z-index: 21;
-}
-
-.l6 {
-    transform: translate(-260px, 260px);
-    z-index: 20;
-}
-
-.l7 {
-    transform: translate(-295px, 295px);
-    z-index: 19;
-}
-
-.l8 {
-    transform: translate(-330px, 330px);
-    z-index: 18;
-}
-
-.l9 {
-    transform: translate(-365px, 365px);
-    z-index: 17;
-}
-
-.l10 {
-    transform: translate(-400px, 400px);
-    z-index: 16;
-}
-
-.l11 {
-    transform: translate(-435px, 435px);
-    z-index: 15;
-}
-
-.l12 {
-    transform: translate(-470px, 470px);
-    z-index: 14;
-}
-
-.l13 {
-    transform: translate(-505px, 505px);
-    z-index: 13;
-}
-
-.l14 {
-    transform: translate(-540px, 540px);
-    z-index: 12;
-}
-
-.l15 {
-    transform: translate(-575px, 575px);
-    z-index: 11;
-}
-
-.l16 {
-    transform: translate(-610px, 610px);
-    z-index: 10;
-}
-
-.l17 {
-    transform: translate(-645px, 645px);
-    z-index: 9;
-}
-
-.l18 {
-    transform: translate(-680px, 680px);
-    z-index: 8;
-}
-
-.l19 {
-    transform: translate(-715px, 715px);
-    z-index: 7;
-}
-
-.l20 {
-    transform: translate(-750px, 750px);
-    z-index: 6;
-}
 
 .ball-container {
     position: absolute;
     top: 600px;
     left: 100px;
     z-index: 50;
-    animation: beautifulJump 1.2s infinite ease-in-out;
 }
 
 .ball-visual {
@@ -199,33 +84,8 @@ body {
     height: 65px;
     background: radial-gradient(circle at 30% 30%, #ff66b3, #ff0055);
     border-radius: 50%;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    animation: beautifulSpin 2.4s infinite linear;
 }
 
-@keyframes beautifulJump {
-    0% {
-        transform: translateY(0px) scale(1.1, 0.9);
-    }
-
-    50% {
-        transform: translateY(-90px) scale(1, 1);
-    }
-
-    100% {
-        transform: translateY(0px) scale(1.1, 0.9);
-    }
-}
-
-@keyframes beautifulSpin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 .shadow {
     position: absolute;
@@ -234,20 +94,6 @@ body {
     width: 55px;
     height: 15px;
     border-radius: 50%;
+    background: black;
     filter: blur(4px);
-    animation: shadowPulse 1.2s infinite ease-in-out;
-}
-
-@keyframes shadowPulse {
-
-    0%,
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    50% {
-        transform: scale(0.4);
-        opacity: 0.2;
-    }
 }
