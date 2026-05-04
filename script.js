@@ -3,7 +3,7 @@ $(document).ready(function () {
     function moveStairs() {
         $(".stairs").animate(
             { top: "+=260" },
-            3000,
+            3001,
             "linear",
             function () {
                 $(this).css("top", "-140px");
