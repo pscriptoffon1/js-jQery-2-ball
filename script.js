@@ -34,7 +34,7 @@ $(document).ready(function () {
                 stepIndex++;
 
                 if (stepIndex >= steps.length) {
-                    stepIndex = 0; // ✅ правильно
+                    stepIndex = 0; 
                 }
 
                 ballMove();
